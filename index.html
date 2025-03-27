@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Dark Glass Bio Site</title>
+  <style>
+    /* Basic reset and body styling */
+    body {
+      margin: 0;
+      padding: 0;
+      /* Replace with your own background if desired */
+      background: url('your-background-image.jpg') no-repeat center center fixed;
+      background-size: cover;
+      cursor: url('your-custom-cursor.png'), auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    /* Dark glass effect container */
+    .container {
+      background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+      border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4); /* Shadow for a floating effect */
+      width: 320px;
+      max-width: 90%;
+    }
+
+    /* Profile picture styling */
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      margin-bottom: 15px;
+    }
+
+    /* Profile name styling */
+    .profile-name {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Additional text styling */
+    .profile-text {
+      font-size: 14px;
+      opacity: 0.85;
+      margin: 10px 0;
+    }
+
+    /* Discord link styling */
+    .discord-link {
+      margin-top: 20px;
+      text-decoration: none;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .discord-link:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    /* Discord logo sizing */
+    .discord-link img {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Hide the audio element visually */
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Autoplay background music -->
+  <audio autoplay loop>
+    <source src="backtomybbc.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <!-- Profile picture -->
+    <img class="profile-pic" src="your-pfp.jpg" alt="Profile Picture" />
+
+    <!-- Profile name -->
+    <h1 class="profile-name">Your Profile Name</h1>
+
+    <!-- Additional text (e.g., short bio) -->
+    <p class="profile-text">Welcome to my bio site!</p>
+
+    <!-- Discord link/logo -->
+    <a class="discord-link" href="your-discord-link" target="_blank">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Discord_Logo.svg"
+        alt="Discord Logo"
+      />
+      <span>Join My Server</span>
+    </a>
+  </div>
+</body>
+</html>
